@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+
+  build:
+    commands:
+      - npm run lint
+      - npm run test:coverage
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
+
+reports:
+  code-coverage:
+    files:
+      - coverage/lcov-report/index.html
