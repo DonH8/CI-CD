@@ -10,13 +10,15 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <img src={logo} className="App-logo" alt="logo2" />
+
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer" 
         >
-          Learn React
+          Learn CI/CD
         </a>
       </header>
     </div>

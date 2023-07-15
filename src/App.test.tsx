@@ -7,7 +7,7 @@ describe('App', () => {
     render(<App />);
     
     // Verify that the logo is rendered
-    const logoElement = screen.getByAltText('logo');
+    const logoElement = screen.getByAltText('logo2');
     expect(logoElement).toBeInTheDocument();
   });
 });
