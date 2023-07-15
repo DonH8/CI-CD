@@ -6,8 +6,8 @@ describe('App', () => {
   test('renders the App component', () => {
     render(<App />);
     
-    // Verify that the text "Edit src/App.tsx and save to reload." is present
-    const textElement = screen.getByText(/edit src\/App\.tsx and save to reload\./i);
-    expect(textElement).toBeInTheDocument();
+    // Verify that the logo is rendered
+    const logoElement = screen.getByAltText('logo');
+    expect(logoElement).toBeInTheDocument();
   });
 });
