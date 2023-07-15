@@ -2,20 +2,21 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
       - npm install
+
+  pre_build:
+    commands:
+      - npm run build
 
   build:
     commands:
       - npm run lint
-      - npm run test:coverage
-      - npm run build
+      - npm test
 
 artifacts:
   files:
     - '**/*'
 
-reports:
-  code-coverage:
-    files:
-      - coverage/lcov-report/index.html
